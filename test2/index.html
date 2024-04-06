@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Обязательные метатеги -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Пример страницы Bootstrap</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav w-100">
+          <div class="navbar-nav__search w-100">
+            <!-- <form class="form-inline my-2 my-lg-0 position-relative"> -->
+            <input class="form-control mr-sm-2 " id="search-input" type="search" placeholder="Поиск..."
+              aria-label="Search">
+            <span class="search-icon" onclick="performSearch()"><img src="images/icon-search.png" alt=""></span>
+            <!-- </form> -->
+          </div>
+
+          <div class="navbar-nav__login">
+            <div class="nav__btn-login">
+              <a class="nav-item nav-link" href="#">Вход</a>
+            </div>
+            <div class="nav__btn-register">
+              <a class="nav-item nav-link" href="#">Регистрация</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="filters">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 w-100">
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" id="input-btn" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Фильтры</button>
+
+            <input class="form-control mr-sm-2 " id="search-input" type="search" placeholder="Поиск..."
+              aria-label="Search">
+
+
+
+            <button class="btn btn-outline-secondary dropdown-toggle" id="input-btn" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">По умолчанию</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cards-block">
+    <div class="container">
+      <div class="row" id="row">
+        <!-- <div class="cards"> -->
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 custom-border p-2 m-2">
+          <div class="card border-0 ">
+            <img src="images/photo.png" class="img-fluid" alt="Описание фотографии">
+            <h4>Без слов</h4>
+            <div class="info">
+              <img src="images/photo-mini.png" alt="Описание миниатюры">
+              <div class="info-fio">
+                <h5>Настя Ивлеева Вячеславовна</h5>
+                <div class="verified">
+                  <p>проверено</p>
+                  <img src="images/icon-check.png" alt="Иконка проверено">
+                </div>
+              </div>
+            </div>
+            <div class="rarity">
+              <h5>Редкость:</h5>
+              <div class="rarity__info">
+                <p>уникальная</p>
+              </div>
+
+            </div>
+            <div class="price">
+              <h5>Цена:</h5>
+              <div class="price__info">
+                <p>от 500 ₽</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-warning" id="card__btn">Купить</a>
+          </div>
+
+        </div>
+
+
+        <!-- </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="Пагинация" class="pagination-block">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">«</span>
+        </a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">»</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <footer class="bg-warning text-white pt-4 pb-4 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <h5>NFT</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" >Что такое NFT</a></li>
+            <li><a href="#">Создайте NFT с нами</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h5>Компания</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Отправить запрос</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h5>Другое</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Условия использования</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <span>© 2023 tnft.ru Company, Inc</span>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+  <!-- Bootstrap JS с Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

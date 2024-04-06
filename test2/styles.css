@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* p,
+h5 {
+    font-family: "Rubik", sans-serif;
+}
+
+h4 {
+    font-family: "Istok Web";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 34.62px;
+    color: #000000;
+}
+
+*p {
+    font-size: 11px;
+
+}
+
+.custom-border {
+    border: 0.7px solid #302F2EB2;
+}
+
+.verified {
+    display: flex;
+    align-items: center;
+
+}
+
+.verified p {
+    margin-right: 5px;
+    font-family: "Rubik", sans-serif;
+}
+
+.info {
+    display: flex;
+    padding: 0;
+}
+
+.info-fio {
+    margin-left: 10px;
+}
+
+
+
+.rarity {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rarity h5 {
+    font-weight: 400;
+    margin: 0;
+
+}
+
+.rarity__info {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(180deg, #FFC107 0%, #EC851A 100%) border-box;
+    background-clip: padding-box, border-box;
+}
+
+.rarity__info p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price h5 {
+    font-weight: 400;
+    margin: 0;
+
+}
+
+.price__info {
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: #FDD446;
+}
+
+.price__info p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.btn-warning {
+    margin: 10px 20px 10px 20px;
+    background:
+        linear-gradient(90deg, #FDD446 0%, #F69B47 100%);
+    border-radius: 15px;
+}
+
+
+#card__btn {
+    border-radius: 15px;
+}
+
+
+#navbarNav {
+    justify-content: space-between;
+}
+
+.d-flex {
+    z-index: 1;
+}
+
+
+
+/* navbar */
+.navbar-nav {
+    gap: 10px
+}
+.navbar-nav__search {
+    position: relative;
+   
+}
+
+.navbar-nav__login {
+    display: flex; gap: 10px;
+}
+
+#search-input {
+    /* width: 100%; */
+    border-radius: 57px;
+    border: 1px solid #00000080;
+    padding-left: 45px;
+   
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.nav__btn-login {
+   
+    padding: 5px 20px;
+    border: 1.5px solid #FDD446;
+    border-radius: 20px;
+}
+.nav__btn-login a{
+    padding: 0;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav__btn-register{
+    padding: 5px 5px;
+    border: 1.5px solid #FDD446;
+    border-radius: 20px;
+    background-color:#FDD446 ;
+}
+.nav__btn-register a{
+    padding: 0;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.input-group {
+   gap: 1.5rem
+}
+
+#input-btn {
+    border-radius: 10px;
+    border: 1px solid #00000080;
+    padding-right: 100px;
+}
+
+#row{
+    justify-content: space-between;
+}
+
+.pagination li.page-item .page-link {
+    border: none;
+    width: 2rem; 
+    height: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a{
+    font-size:18px ;
+    font-weight: 700;
+    line-height: 38px;
+    color: #000000;
+}
+
+
+.pagination .page-item.active .page-link {
+    background-color: #FDD446; 
+    border-radius: 50%; 
+    
+}
+
+.pagination-block{
+    margin: 20px 0 60px 0;
+}
+
+.footer-col h5{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.79px;
+    color: #000000;
+}
+
+.footer-col a{
+    font-family: "Rubik";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.text-center span{
+    font-family: "Rubik";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.33px;
+    color: #00000080;
+    
+}
